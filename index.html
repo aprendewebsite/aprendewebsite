@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-Learn-It | Aprende Inglés</title>
+    <!-- Tipografía -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset y tipografía */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; background-color: #f9fafb; color: #333; }
+
+        /* Contenedor general */
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
+
+        /* Hero */
+        .hero {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 60px 20px;
+        }
+        .hero-text { flex: 1; }
+        .hero-text h1 { font-size: 3rem; color: #2563eb; margin-bottom: 10px; }
+        .hero-text p { font-size: 1.3rem; color: #333; }
+
+        .hero-img { flex: 1; text-align: center; }
+        .hero-img img { width: 100%; max-width: 400px; border-radius: 15px; }
+
+        /* Sección de Beneficios */
+        .benefits {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin: 40px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .benefits h2 { color: #2563eb; font-size: 2rem; margin-bottom: 20px; text-align: center; }
+        .benefits ul { list-style-type: disc; padding-left: 20px; }
+        .benefits li { margin-bottom: 10px; font-size: 1.1rem; }
+
+        .benefits img { max-width: 300px; margin: 0 auto 20px; display: block; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #2563eb;
+            color: #fff;
+            border-radius: 15px;
+        }
+        footer a { color: #fff; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+
+        /* Responsivo */
+        @media (max-width: 900px) {
+            .hero { flex-direction: column; text-align: center; }
+            .hero-img img { max-width: 300px; margin-top: 20px; }
+        }
+
+        @media (max-width: 500px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero-text p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>U-Learn-It</h1>
+                <p>Aprende inglés de manera divertida y práctica. Desde principiante hasta intermedio, construye habilidades mientras disfrutas del proceso.</p>
+            </div>
+            <div class="hero-img">
+                <img src="images/aprendiendo.png" alt="Aprendiendo inglés">
+            </div>
+        </section>
+
+        <!-- Beneficios -->
+        <section class="benefits">
+            <h2>Beneficios de aprender inglés</h2>
+            <img src="images/benefits.png" alt="Beneficios de aprender inglés">
+            <ul>
+                <li>Mejora la comunicación global: interactúa con personas de todo el mundo.</li>
+                <li>Aumenta oportunidades laborales y académicas.</li>
+                <li>Fortalece la mente y la memoria.</li>
+                <li>Facilita el acceso a contenido educativo en inglés.</li>
+                <li>Desarrolla confianza al expresarte en un nuevo idioma.</li>
+            </ul>
+            <p style="text-align:center; margin-top:15px;">
+                Más información: <a href="https://www.britishcouncil.org/school-resources/find/benefits-of-learning-english" target="_blank">Estudio sobre beneficios de aprender inglés</a>
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Contacto: <a href="mailto:tu_email@ejemplo.com">tu_email@ejemplo.com</a> | <a href="https://github.com/u-learn-it" target="_blank">GitHub</a></p>
+            <p>© 2025 U-Learn-It</p>
+        </footer>
+    </div>
+</body>
+</html>
+
