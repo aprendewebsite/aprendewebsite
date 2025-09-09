@@ -14,6 +14,26 @@
         /* Contenedor general */
         .container { max-width: 1200px; margin: auto; padding: 20px; }
 
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 15px 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        header img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: #2563eb;
+        }
+
         /* Hero */
         .hero {
             display: flex;
@@ -24,7 +44,7 @@
             padding: 60px 20px;
         }
         .hero-text { flex: 1; }
-        .hero-text h1 { font-size: 3rem; color: #2563eb; margin-bottom: 10px; }
+        .hero-text h2 { font-size: 3rem; color: #2563eb; margin-bottom: 10px; }
         .hero-text p { font-size: 1.3rem; color: #333; }
 
         .hero-img { flex: 1; text-align: center; }
@@ -44,6 +64,38 @@
 
         .benefits img { max-width: 300px; margin: 0 auto 20px; display: block; }
 
+        /* Recursos */
+        .resources {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin: 40px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .resources h2 {
+            color: #2563eb;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .resources p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .btn-download {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #2563eb;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        .btn-download:hover {
+            background-color: #1e40af;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -59,20 +111,28 @@
         @media (max-width: 900px) {
             .hero { flex-direction: column; text-align: center; }
             .hero-img img { max-width: 300px; margin-top: 20px; }
+            header { flex-direction: column; text-align: center; }
+            header img { margin-bottom: 10px; }
         }
 
         @media (max-width: 500px) {
-            .hero h1 { font-size: 2.2rem; }
+            .hero h2 { font-size: 2.2rem; }
             .hero-text p { font-size: 1rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Header con logo -->
+        <header>
+            <img src="images/logo.png" alt="Logo aprende.website">
+            <h1>aprende.website</h1>
+        </header>
+
         <!-- Hero -->
         <section class="hero">
             <div class="hero-text">
-                <h1>U-Learn-It</h1>
+                <h2>Aprende Inglés</h2>
                 <p>Aprende inglés de manera divertida y práctica. Desde principiante hasta intermedio, construye habilidades mientras disfrutas del proceso.</p>
             </div>
             <div class="hero-img">
@@ -96,10 +156,21 @@
             </p>
         </section>
 
+        <!-- Recursos -->
+        <section class="resources">
+            <h2>Tips antes de empezar</h2>
+            <p>Abre el PDF y después puedes descargarlo si así lo deseas.</p>
+            <a href="https://drive.google.com/file/d/14mJANjvc37Rb7AjUvtnwkvMleJvyUl06/view?usp=sharing" target="_blank" class="btn-download">
+                📘 Abrir PDF
+            </a>
+        </section>
+
         <!-- Footer -->
         <footer>
-            <p>Contacto: <a href="mailto:tu_email@ejemplo.com">tu_email@ejemplo.com</a> | <a href="https://github.com/u-learn-it" target="_blank">GitHub</a></p>
-            <p>© 2025 U-Learn-It</p>
+            <p>Información de prácticas ó cursos 👉: <a href="mailto:informacion_de_cursos@aprende.website">informacion_de_cursos@aprende.website </a> | 
+                <a href="https://github.com/u-learn-it" target="_blank">GitHub</a>
+            </p>
+            <p>© 2025 aprende.website</p>
         </footer>
     </div>
 </body>
